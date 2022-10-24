@@ -9,8 +9,7 @@ import os
 # Credentials
 load_dotenv(".env")  # This will load the .env file
 
-# sheety.co/docs/requests   -> Need to sing in with google account.
-https://developer.nutritionix.com/docs/v2
+# https://developer.nutritionix.com/docs/v2
 # https://docs.google.com/document/d/1_q-K-ObMTZvO0qUEAxROrN3bwMujwAN25sLHwJzliK0/edit#
 NUTRIONIX_APP_ID = os.getenv("NUTRIONIX_APP_ID")
 NUTRIONIX_API_KEY = os.getenv("NUTRIONIX_API_KEY")
@@ -45,6 +44,7 @@ now = datetime.now()
 today_date = now.strftime("%d/%m/%Y")
 now_time = now.strftime("%H:%M")
 
+# sheety.co/docs/requests   -> Need to sing in with google account.
 sheety_endpoint = os.getenv("SHEETY_ENDPOINT")
 
 for exercise in result["exercises"]:
